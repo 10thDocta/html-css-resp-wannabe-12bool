@@ -46,11 +46,25 @@ main>.container {
   border-bottom: 1px solid;
 }
 
+/****
+ FOOTER
+****/
+footer .container .col-xs-12 {
+  margin: 20px 0;
+  padding: 0 10px;
+  color: blue;
+  text-align: right;
+}
+
 /***
 RESPONSIVE
 ***/
 /* > 768px - tablet */
 @media screen and (min-width: 768px) {
+  hr {
+    display: none;
+  }
+
   img {
     height: 150px;
   }
