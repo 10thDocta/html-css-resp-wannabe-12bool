@@ -10,24 +10,15 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3 {
-  text-align: center;
-}
-
 hr {
   margin-top: 50px;
 }
 
 img {
   /* per centrare orizzontalmente */
-  height: 200px;
+  height: 150px;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.grey {
-  background-color: #f9f9f9;
+  margin: auto;
 }
 
 #why img {
@@ -36,104 +27,35 @@ img {
   padding: 30px;
 }
 
+[class*="col-"] {
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  margin: 40px auto;
+}
+
+.grey {
+  background-color: #f9f9f9;
+}
+
+/****
+ HEADER
+****/
+header.container {
+  margin-top: 20px;
+}
+
 /***
 RESPONSIVE
 ***/
-@media screen and (max-width: 420px) {
-  h3 {
-    font-size: 32px;
-    padding: 10px 0;
-  }
-
+/* > 768px - tablet */
+@media screen and (min-width: 768px) {
   img {
-    height: 150px;
-    margin: 45px 0 10px 0;
-  }
-
-  .row {
-    width: 100%;
-    margin-top: 0;
-    padding: 30px 18px;
-  }
-
-  /* BLOCCO LEZIONI */
-  #lezioni {}
-
-  #lezioni .row>.left,
-  #lezioni .row>.right {
-    width: 100%;
-    float: none;
-  }
-
-  /* BLOCCO STEPS */
-  #steps .row>.left,
-  #steps .row>.central,
-  #steps .row>.right {
-    width: 100%;
-    float: none;
-  }
-
-  /* BLOCCO PERCHE */
-  #why .row>.first,
-  #why .row>.second,
-  #why .row>.third {
-    width: 100%;
-    margin-top: 0;
+    height: 200px;
   }
 }
 
-/* 1024px */
-@media screen and (min-width: 420px) and (max-width: 1024px) {
-  * {
-    box-sizing: border-box;
-  }
-
-  .row {
-    margin-top: 20px;
-    width: 100%;
-    padding: 0 10px;
-  }
-
-  body {
-    font-family: Georgia, sans-serif;
-  }
-
-  h1 {
-    padding: 15px 0;
-  }
-
-  h3 {
-    padding: 10px 0;
-  }
-
-  hr {
-    margin-top: 50px;
-  }
-
-  img {
-    height: 115px;
-    margin: 45px 0 10px 0;
-  }
-
-  /* BLOCCO LEZIONI */
-  #lezioni {}
-
-  #lezioni .row>.left,
-  #lezioni .row>.right {
-    padding: 0 10px;
-  }
-
-  /* BLOCCO STEPS */
-  #steps .row>.left,
-  #steps .row>.central,
-  #steps .row>.right {
-    padding: 0 10px;
-  }
-
-  /* BLOCCO PERCHE */
-  #why .row>.first,
-  #why .row>.second,
-  #why .row>.third {
-    margin-top: 0;
-  }
-}
+/* > 992px - desktop */
+@media screen and (min-width: 992px) {}
