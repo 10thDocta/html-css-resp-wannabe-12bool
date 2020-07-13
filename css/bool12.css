@@ -63,7 +63,7 @@
 }
 
 .col-xs-12 {
-  width: calc((100% / 12) * 12);
+  width: 100%;
 }
 
 /* XS - Offset */
@@ -160,7 +160,7 @@
   }
 
   .col-md-12 {
-    width: calc((100% / 12) * 12);
+    width: 100%;
   }
 
   /* MD Offset */
@@ -258,7 +258,7 @@
   }
 
   .col-lg-12 {
-    width: calc((100% / 12) * 12);
+    width: 100%;
   }
 
   /* LG Offset  */
